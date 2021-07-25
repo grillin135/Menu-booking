@@ -1,11 +1,11 @@
 import React from "react";
-import ShakeData from "../../data/ShakeData.js";
+import ShakesData from "../../data/ShakesData.js";
 import MenuItem from "../MenuItem";
 const Shake = ({ menuItems, setMenuItems }) => {
-    console.log(ShakeData);
+
   return (
     <>
-      {ShakeData.map((item) => (
+      {ShakesData.map((item) => (
         <MenuItem
           id={item.id}
           menuItems={menuItems}
