@@ -18,6 +18,7 @@ import FriedChicken from "../../components/category/FriedChicken";
 import Wraps from "../../components/category/Wraps";
 import Footlongs from "../../components/category/Footlongs";
 import Shake from "../../components/category/Shake";
+import Footer from "../../components/Footer";
 
 export const MenuPage = ({ table, menuItems, setMenuItems }) => {
   const [name, setName] = useState("");
@@ -238,6 +239,8 @@ export const MenuPage = ({ table, menuItems, setMenuItems }) => {
         <button className="submit" onClick={checkMenu}>
           Submit Order
         </button>
+        <Footer/>
+
       </div>
     </>
   );

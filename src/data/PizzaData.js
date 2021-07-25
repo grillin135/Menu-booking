@@ -8,7 +8,7 @@ const PizzaData =   [
     },
     {
         "id": 1,
-        "name": "Margherita Pizza Reg",
+        "name": "Margherita Pizza Regular",
         "price": "109",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Margarita-Pizza%20-%20Copy.png?token=AQZAIB7J6ECVOURDFGCLTUTBAX5YQ",
         "non-veg": false
@@ -22,7 +22,7 @@ const PizzaData =   [
     },
     {
         "id": 3,
-        "name": "Veggie Dolght Pizza Reg",
+        "name": "Veggie Dolght Pizza Regular",
         "price": "169",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Veggie-Delight-Pizza%20-%20Copy.png?token=AQZAIB6FHNLK4JGB5JWYYELBAX7NU",
         "non-veg": false
@@ -36,7 +36,7 @@ const PizzaData =   [
     },
     {
         "id": 5,
-        "name": "Paneer Tikka Pizza Rag",
+        "name": "Paneer Tikka Pizza Regular",
         "price": "209",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Paneer-Tikka-Pizza%20-%20Copy.png?token=AQZAIB7LRQOSZ7XY6ID6LTLBAX66C",
         "non-veg": false
@@ -50,7 +50,7 @@ const PizzaData =   [
     },
     {
         "id": 7,
-        "name": "Teekha Paneer Pizza Rag",
+        "name": "Teekha Paneer Pizza Regular",
         "price": "209",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Teekha-Paneer-Pizza%20-%20Copy.png?token=AQZAIB6X2O737S53SA4GAXTBAX7H2",
         "non-veg": false
@@ -64,7 +64,7 @@ const PizzaData =   [
     },
     {
         "id": 9,
-        "name": "Deluxe Veggie Pizzu Rag",
+        "name": "Deluxe Veggie Pizzu Regular",
         "price": "229",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Deluxe-Veggie-Pizza%20-%20Copy.png?token=AQZAIB3IGA22TNFHNAUTUK3BAX6KS",
         "non-veg": false
@@ -78,7 +78,7 @@ const PizzaData =   [
     },
     {
         "id": 11,
-        "name": "Mushroom Com Delight Rag",
+        "name": "Mushroom Com Delight Regular",
         "price": "229",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Mmushroom-Corn-Pizza%20-%20Copy.png?token=AQZAIB7YVKA6HEDMV22UJPDBAX6NO",
         "non-veg": false
@@ -92,7 +92,7 @@ const PizzaData =   [
     },
     {
         "id": 13,
-        "name": "Veg Extravaganza Rag",
+        "name": "Veg Extravaganza Regular",
         "price": "269",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Veg-Extravaganza-Pizza%20-%20Copy.png?token=AQZAIB6P5VYHO7VMPIK46KDBAX7KO",
         "non-veg": false
@@ -106,7 +106,7 @@ const PizzaData =   [
     },
     {
         "id": 15,
-        "name": "Chicken Delight Pizza Rag",
+        "name": "Chicken Delight Pizza Regular",
         "price": "199",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Chicken-Delight-Pizza%20-%20Copy.png?token=AQZAIB5TOGHBECAUFBMLDMDBAX546",
         "non-veg": true
@@ -120,7 +120,7 @@ const PizzaData =   [
     },
     {
         "id": 17,
-        "name": "Chicken Tikka Pizza Rag",
+        "name": "Chicken Tikka Pizza Regular",
         "price": "219",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Teekha-Chicken-Pizza-1%20-%20Copy.png?token=AQZAIB5747LE2LRRC544MNDBAX7DK",
         "non-veg": true
@@ -134,7 +134,7 @@ const PizzaData =   [
     },
     {
         "id": 19,
-        "name": "Teekha Chicken Pizza Rag",
+        "name": "Teekha Chicken Pizza Regular",
         "price": "219",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Chicken-Tikka-Pizza%20-%20Copy.png?token=AQZAIB4435PGZGD6LDBKH63BAX6EI",
         "non-veg": true
@@ -148,7 +148,7 @@ const PizzaData =   [
     },
     {
         "id": 21,
-        "name": "Deluxe Chicken Pizza Rag",
+        "name": "Deluxe Chicken Pizza Regular",
         "price": "239",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Deluxe-Chicken-Pizza%20-%20Copy.png?token=AQZAIBZUTCKQGO2B3ZCRC63BAX6IA",
         "non-veg": true
@@ -162,25 +162,25 @@ const PizzaData =   [
     },
     {
         "id": 25,
-        "name": "Chicken Extravaganza Rag",
+        "name": "Chicken Extravaganza Regular",
         "price": "279",
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/pizzas/Chicken-Extravaganza-Pizza%20-%20Copy.png?token=AQZAIB5SD5GH2EWAWROL3WDBAX6BE",
         "non-veg": true
     },
-    {
-        "id": 22,
-        "name": "Chicken Seekh Pezza Pan",
-        "price": "129",
-        "img":"",
-        "non-veg" : true
-    },
-    {
-        "id": 23,
-        "name": "Chicken Seekh Pezza Rag",
-        "price": "239",
-        "img":"",
-        "non-veg" : true
-    }
+    // {
+    //     "id": 22,
+    //     "name": "Chicken Seekh Pezza Pan",
+    //     "price": "129",
+    //     "img":"",
+    //     "non-veg" : true
+    // },
+    // {
+    //     "id": 23,
+    //     "name": "Chicken Seekh Pezza Regular",
+    //     "price": "239",
+    //     "img":"",
+    //     "non-veg" : true
+    // }
 ]
 
 

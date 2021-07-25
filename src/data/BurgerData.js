@@ -48,13 +48,13 @@ const BurgerData =   [
         "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/burgers/Fried-Chicken-Burger.png?token=AQZAIBYJUAGGPVLGBIJGLYTBAYCUG",
         "non-veg": true
     },
-    {
-        "id": 7,
-        "name": "Chicken Surprise Burger",
-        "price": "99",
-        "img": "",
-        "non-veg": true
-    },
+    // {
+    //     "id": 7,
+    //     "name": "Chicken Surprise Burger",
+    //     "price": "99",
+    //     "img": "",
+    //     "non-veg": true
+    // },
     {
         "id": 8,
         "name": "Chicken Chili Lava Burger",

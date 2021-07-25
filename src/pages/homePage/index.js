@@ -17,6 +17,7 @@ import Pizza from "../../components/category/Pizza";
 import FriedChicken from "../../components/category/FriedChicken";
 import Wraps from "../../components/category/Wraps";
 import Footlongs from "../../components/category/Footlongs";
+import Footer from "../../components/Footer";
 
 export const HomePage = ({ menuItems, setMenuItems }) => {
   const [name, setName] = useState("");
@@ -289,6 +290,8 @@ export const HomePage = ({ menuItems, setMenuItems }) => {
         <button className="submit" onClick={checkMenu}>
           Submit Order
         </button>
+          <Footer/>
+
       </div>
     </>
   );
