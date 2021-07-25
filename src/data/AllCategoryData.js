@@ -1,7 +1,7 @@
 const AllCategoryData = [
   {
     "id": 0,
-    "name": "Alco Tikki Burger",
+    "name": "Aloo Tikki Burger",
     "price": "35",
     "img": "https://raw.githubusercontent.com/gautam4895/Grill-inn/main/img/burgers/Veg-Aloo-Tikki.png?token=AQZAIB3FP6IQJ4UO3TVDINDBAYCME",
     "non-veg": false
