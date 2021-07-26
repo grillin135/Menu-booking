@@ -2,21 +2,43 @@
 
 .menuitems{
     /* width: 47.5vw; */
-    display: flex;
-    /* height: 251px; */
-    border-radius: 10px;
-    margin: 2px;
-    background: #F9F9F9;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2px;
-    
+    // display: flex;
+    // /* height: 251px; */
+    // border-radius: 10px;
+    // margin: 2px;
+    // background: #F9F9F9;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 2px;
+    // width: 47.5vw;
+    // // display: flex;
+    // height: 19rem;
+    // border-radius: 10px;
+    // margin: 2px;
+    // background: #F9F9F9;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 2px;
+
     //box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
 
-    &__img{
-        // width:43%;
-        // border-radius: 50%;
+    width: 47.5vw;
+width: 47.5vw;
+height: 19rem;
+border-radius: 10px;
+margin: 2px;
+background: #ffffff;
+flex-direction: column;
+align-items: center;
+// justify-content: center;
+margin: 2px;
+display: flex;
+
+    &__h3{
+        font-size: 0.8rem;
+        padding: 0px 5px;
     }
     &__img2{
         width: 50%;
@@ -25,11 +47,15 @@
     &__img3{
         width: 50%;
   }
-    &__img4{
-        width: 100%;
-        left: 134px;
+    &__img4 {
+        // width: 100%;
+        // left: 60px;
         position: relative;
-
+        // float: right;
+        top: 21px;
+    }
+    &__img{
+        border-radius: 10px;
     }
 
     &__input{
@@ -50,28 +76,29 @@
     }
     &__button2{
         position: relative;
-        left: 100px;
-        /* float: right; */
+        // left: 29px;
+        float: right;
         display: flex;
-        width: 114px;
+        width: 122px;
         align-items: center;
         background-color: #F8F9FD;
         box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
-
         justify-content: space-between;
+        top: 29px;
     }
     &__button3{
         background-color: #ffffff;
-        height: 45px;
+        height: 36px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 3px;
+        border-radius: 4px;
         width: 40px;
+    
     }
     &__button4{
         background-color: #ff7144;
-        height: 45px;
+        height: 37px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -86,18 +113,33 @@
     padding: 10px;
 
     &__wrapper{
-        display: flex;
-        background-color: #F56B00;
+       
+        // background: #F56B00;
         margin: 10px;
         border-radius: 10px;
         color: white;
-        min-width: 7rem;
+        min-width: 8rem;
         justify-content: center;
-        
-    align-items: center;
+        height: 3.4rem;
 
     }
-   
+    // img{
+    //     background-color: #0000;
+    //     border-radius: 10px;
+    //     color: white;
+    //     min-width: 7rem;
+    //     height: 3.4rem;
+    //     object-fit: cover;
+ 
+    // }
+
+    &__span{
+        position: relative;
+        color: white;
+        top: -47px;
+        left: 36px;
+    }
+
     &__name {
         margin: 10px;
         color: white;
@@ -128,16 +170,61 @@
 .button__submit{
     display:none;
 }
-*{
-    color: black;
-}
+// *{
+//     color: black;
+// }
 // .app {
 //     // background-color: #fef3c7;
 //     background-color: #ffd321;
 // }
+*::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 768px){
+    .menuitems{
+        /* width: 47.5vw; */
+        // display: flex;
+        // /* height: 251px; */
+        // border-radius: 10px;
+        // margin: 2px;
+        // background: #F9F9F9;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // margin: 2px;
+        // width: 47.5vw;
+        // // display: flex;
+        // height: 19rem;
+        // border-radius: 10px;
+        // margin: 2px;
+        // background: #F9F9F9;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // margin: 2px;
+    
+        //box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
+    
+    width: auto;
+    height: 22rem;
+    border-radius: 10px;
+    margin: 2px;
+    background: #F9F9F9;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    margin: 2px;
+    display: flex;
 
-.footer {
-    bottom: 6rem;
-    position: relative;
-    margin-left: 98px;
+    &__button2{
+        top: 17px;
+    }
+        &__img4{
+          
+                position: relative;
+                top: 14px;
+            
+        }
+    }
+    
   }

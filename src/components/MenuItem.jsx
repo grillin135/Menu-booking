@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/menuItem.scss";
 
+
+
 const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
   const [itemNumber, setItemNumber] = useState(0);
 
@@ -52,15 +54,16 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
       { id: id, name: name, numberOfPlates: 1, price: price },
     ]);
   };
-
+  console.log(itemNumber);
   return (
     <div className="menuitems">
- {/* <img className="menuitems__img" src={img} alt="" /> */} 
-        <LazyLoadImage
-        src={img} 
-        effect="blur"// use normal <img> attributes as props
-    /> 
-      <h3>{name}</h3>
+      {/* <img className="menuitems__img" src={img} alt="" /> */}
+      <LazyLoadImage
+      className="menuitems__img"
+        src={img}
+        effect="blur" // use normal <img> attributes as props
+      />
+      <h3 className="menuitems__h3">{name}</h3>
       {itemNumber > 0 ? (
         <div className="menuitems__button2">
           <button className="menuitems__button3" onClick={handleMinus}>
@@ -80,10 +83,9 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
           </button>
         </div>
       ) : (
-        <button onClick={handlePlusButton}>
+        <button className="menuitems__img4"onClick={handlePlusButton}>
           <img
             alt=""
-            className="menuitems__img4"
             src="https://img.icons8.com/material-rounded/48/000000/plus--v2.png"
           />
         </button>

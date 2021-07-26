@@ -284,6 +284,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -291,7 +292,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -333,7 +333,8 @@ export const AdminPage = () => {
                     return (
                       <div>
                         <h1>
-                          <span>Product Name : </span> {item.name}
+                          <span>Product Name : </span> {item.name} {item.numberOfPlates}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -341,7 +342,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -384,6 +384,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -391,7 +392,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -434,6 +434,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -441,7 +442,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -484,6 +484,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -491,7 +492,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -534,6 +534,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -541,7 +542,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -584,6 +584,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -591,7 +592,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -634,6 +634,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -641,7 +642,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -684,6 +684,7 @@ export const AdminPage = () => {
                       <div>
                         <h1>
                           <span>Product Name : </span> {item.name}
+                          <span> {item.numberOfPlates}  </span>
                         </h1>
                         <h1>
                           {" "}
@@ -691,7 +692,6 @@ export const AdminPage = () => {
                           {item.numberOfPlates * item.price}
                         </h1>
                         <h1>
-                          <span>Number Of Plates :</span> {item.numberOfPlates}
                         </h1>
                       </div>
                     );
@@ -732,6 +732,7 @@ export const AdminPage = () => {
                   return (
                     <div>
                       <h1>
+                      <span> {item.numberOfPlates}  </span>
                         <span>Product Name : </span> {item.name}
                       </h1>
                       <h1>
@@ -739,7 +740,6 @@ export const AdminPage = () => {
                         <span>Price :</span> {item.numberOfPlates * item.price}
                       </h1>
                       <h1>
-                        <span>Number Of Plates :</span> {item.numberOfPlates}
                       </h1>
                     </div>
                   );

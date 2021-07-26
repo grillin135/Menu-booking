@@ -1,10 +1,11 @@
 .menupage {
-  background-color: #ffd321;
+  // background-color: #ff2121;
+  background-color: #ff1a14c2;
 
   &__product {
     display: flex;
     flex-wrap: wrap;
-flex-direction:column;
+    // flex-direction: column;
     padding: 4px;
     padding-bottom: 100px;
     align-items: center;
@@ -15,12 +16,13 @@ flex-direction:column;
     border: 1px solid;
   }
 
+
   &__section {
     display: flex;
     justify-content: center;
     padding: 10px;
     flex-wrap: wrap;
-    flex-direction: column;
+    // flex-direction: column;
 
     label {
       padding-right: 10px;
@@ -54,7 +56,7 @@ flex-direction:column;
   &__table {
     position: absolute;
     right: 10px;
-    top: 57px;
+    top: 45px;
     font-size: .9rem;
   }
 }
@@ -63,8 +65,91 @@ flex-direction:column;
   background-color: green;
 }
 
-.footer {
-  bottom: 6rem;
-  position: relative;
-  margin-left: 98px;
+.cart {
+  position: fixed;
+  z-index: 10;
+  top: 90vh;
+  margin-left: 60vw;
+}
+
+.drawer {
+
+  background-color: #F5F4F9!important;
+  &__wrapper {
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 32px 0 rgba(224, 224, 224, 0.37);
+    backdrop-filter: blur(20.0px);
+    -webkit-backdrop-filter: blur(20.0px);
+    border-radius: 10px;
+  }
+
+&__content{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-top: 26px;
+  min-height: 70vh;
+}
+&__scroll{
+  overflow: scroll;
+  height: 60vh;
+  /* display: flex; */
+  // flex-direction: column;
+  display: grid;
+  margin-left: 10px;
+}
+&__submit{
+  
+  background-color: #fe251ec7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 37px;
+  margin: 10px;
+  color: white;
+}
+}
+.menupage__section1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.cartdesktop{
+  display: none;
+}
+ 
+@media (min-width: 768px) {
+  .nav__logo {
+    width: 19%;
+}
+.drawer{
+  display:none;
+}
+.cart{
+  display:none;
+}
+.menupage__section1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  width: 60vw;
+  margin-left: 23vw;
+  // flex-direction: column;
+}
+.menupage__input1 {
+  width:20vw;
+}
+.cartdesktop{
+  display: unset;
+}
 }
