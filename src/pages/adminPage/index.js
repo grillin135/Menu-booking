@@ -14,7 +14,8 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    width: "30rem",
+    width: "24rem",
+    height: "33rem",
   },
 };
 
@@ -103,6 +104,7 @@ export const AdminPage = () => {
     orders9,
     onlineOrders,
   ]);
+  console.log(orders);
   useEffect(() => {
     db.collection("table1")
       .orderBy("timestamp", "desc")
@@ -309,7 +311,8 @@ export const AdminPage = () => {
   // const print = () => {
   //   window.print();
   // }
-  console.log(storedata)
+
+
   return (
     <>
       <div className="admin">
@@ -319,8 +322,16 @@ export const AdminPage = () => {
             onRequestClose={closeModal}
             style={customStyles}
             ref={componentRef}
+            className="modal__price"
           >
-            <div>
+            <div className="print__data" >
+            <div  className="print__wrapper">
+            <h1><span>User Name</span> :{storedata.username} </h1> 
+            <h1> Date: <span> 30/07/2021</span> </h1>
+            </div>
+
+            <hr/>
+
               {storedata.order.map( orders => {
                 console.log(orders);
                 return (
@@ -329,7 +340,7 @@ export const AdminPage = () => {
                
                         <div>
                           <h1 className="items">
-                            <span>Product Name : {orders.name} </span>
+                            <span> {orders.name} </span>
                             <span> {orders.numberOfPlates} </span>
                             <span> {orders.numberOfPlates * orders.price}</span>
                           </h1>
@@ -341,7 +352,9 @@ export const AdminPage = () => {
                   </div>
                 );
               })}
-              <button onClick={handlePrint}>Print this out!</button>
+              <hr/>
+             <h1><span>Total Price</span> :{storedata.totalprice} </h1> 
+              <button className="print__button" onClick={handlePrint}>Print this out!</button>
           </div>
           </Modal>
         )}
@@ -361,6 +374,7 @@ export const AdminPage = () => {
 
             <div className="admin__table1main">
               {orders.map((order) => {
+              
                 return (
                   <div
                     key={order[0].id}
@@ -397,11 +411,11 @@ export const AdminPage = () => {
                       </button>
                     )}
                     <button
-                      className="drawer__submit"
+                      className="print__button"
                       onClick={() => handlePassInfoShow(order[0])}
                     >
                       {" "}
-                      <span>Submit</span>{" "}
+                      <span>Click Here to Print</span>{" "}
                     </button>
                   </div>
                 );
@@ -424,6 +438,7 @@ export const AdminPage = () => {
               {orders2.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -457,6 +472,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -478,6 +500,7 @@ export const AdminPage = () => {
               {orders3.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -511,6 +534,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -532,6 +562,7 @@ export const AdminPage = () => {
               {orders4.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -565,6 +596,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -587,6 +625,7 @@ export const AdminPage = () => {
               {orders5.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -620,6 +659,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -641,6 +687,7 @@ export const AdminPage = () => {
               {orders6.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -674,6 +721,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -695,6 +749,7 @@ export const AdminPage = () => {
               {orders7.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -728,6 +783,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -749,6 +811,7 @@ export const AdminPage = () => {
               {orders8.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -782,6 +845,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -804,6 +874,7 @@ export const AdminPage = () => {
               {orders9.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -837,6 +908,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
@@ -860,6 +938,7 @@ export const AdminPage = () => {
               {onlineOrders.map((order) => {
                 return (
                   <div
+                  key={order[0].id}
                     className={
                       order[0].completed ? "admin__green" : "admin__red"
                     }
@@ -895,6 +974,13 @@ export const AdminPage = () => {
                         <h1>Yes</h1>
                       </button>
                     )}
+                    <button
+                    className="print__button"
+                    onClick={() => handlePassInfoShow(order[0])}
+                  >
+                    {" "}
+                    <span>Click Here to Print</span>{" "}
+                  </button>
                   </div>
                 );
               })}
