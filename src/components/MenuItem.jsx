@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../styles/menuItem.scss";
 
-
-
-const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
+const MenuItem = ({
+  id,
+  menuItems,
+  setMenuItems,
+  name,
+  price,
+  img,
+  setTotalPrice,
+  totalPrice,
+}) => {
   const [itemNumber, setItemNumber] = useState(0);
 
   console.log(menuItems);
@@ -20,6 +28,7 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
     newItem[objIndex] = object;
     setMenuItems(newItem);
     setItemNumber(itemNumber + 1);
+    setTotalPrice(totalPrice + Number(price) * itemNumber);
   };
 
   function handleDeleteClick(id) {
@@ -44,6 +53,7 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
       newItem[objIndex] = object;
       setMenuItems(newItem);
       setItemNumber(itemNumber - 1);
+      setTotalPrice(totalPrice - Number(price));
     }
   };
 
@@ -53,13 +63,14 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
       ...menuItems,
       { id: id, name: name, numberOfPlates: 1, price: price },
     ]);
+    setTotalPrice(totalPrice + Number(price));
   };
   console.log(itemNumber);
   return (
     <div className="menuitems">
       {/* <img className="menuitems__img" src={img} alt="" /> */}
       <LazyLoadImage
-      className="menuitems__img"
+        className="menuitems__img"
         src={img}
         effect="blur" // use normal <img> attributes as props
       />
@@ -83,7 +94,7 @@ const MenuItem = ({ id, menuItems, setMenuItems, name, price, img }) => {
           </button>
         </div>
       ) : (
-        <button className="menuitems__img4"onClick={handlePlusButton}>
+        <button className="menuitems__img4" onClick={handlePlusButton}>
           <img
             alt=""
             src="https://img.icons8.com/material-rounded/48/000000/plus--v2.png"

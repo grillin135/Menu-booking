@@ -1,7 +1,7 @@
 import React from "react";
 import FootlongsData from "../../data/FootlongsData.js";
 import MenuItem from "../MenuItem";
-const Footlongs = ({ menuItems, setMenuItems }) => {
+const Footlongs = ({ menuItems, setMenuItems, setTotalPrice, totalPrice }) => {
     console.log(FootlongsData);
   return (
     <>
@@ -13,6 +13,8 @@ const Footlongs = ({ menuItems, setMenuItems }) => {
           name={item.name}
           price={item.price}
           img={item.img}
+          setTotalPrice={setTotalPrice}
+          totalPrice={totalPrice}
         />
       ))}
     </>

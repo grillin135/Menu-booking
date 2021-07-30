@@ -1,8 +1,7 @@
 import React from "react";
 import ShakesData from "../../data/ShakesData.js";
 import MenuItem from "../MenuItem";
-const Shake = ({ menuItems, setMenuItems }) => {
-
+const Shake = ({ menuItems, setMenuItems, setTotalPrice, totalPrice }) => {
   return (
     <>
       {ShakesData.map((item) => (
@@ -13,6 +12,8 @@ const Shake = ({ menuItems, setMenuItems }) => {
           name={item.name}
           price={item.price}
           img={item.img}
+          setTotalPrice={setTotalPrice}
+          totalPrice={totalPrice}
         />
       ))}
     </>

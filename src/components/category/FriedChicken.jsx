@@ -1,7 +1,7 @@
 import React from "react";
 import FriedChickenData from "../../data/FriedChickenData.js";
 import MenuItem from "../MenuItem";
-const FriedChicken = ({ menuItems, setMenuItems }) => {
+const FriedChicken = ({ menuItems, setMenuItems, setTotalPrice, totalPrice }) => {
     console.log(FriedChickenData);
   return (
     <>
@@ -13,6 +13,8 @@ const FriedChicken = ({ menuItems, setMenuItems }) => {
           name={item.name}
           price={item.price}
           img={item.img}
+          setTotalPrice={setTotalPrice}
+          totalPrice={totalPrice}
         />
       ))}
     </>

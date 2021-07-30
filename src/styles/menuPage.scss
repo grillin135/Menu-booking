@@ -1,7 +1,8 @@
 .menupage {
   // background-color: #ff2121;
-  background-color: #ff1a14c2;
-
+  // background-color: #ff1a14c2;
+  // color: white;
+background-color: #FFFFFF;
   &__product {
     display: flex;
     flex-wrap: wrap;
@@ -20,8 +21,9 @@
   &__section {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 23px 0px;
     flex-wrap: wrap;
+    align-items: center;
     // flex-direction: column;
 
     label {
@@ -33,6 +35,9 @@
       text-align: center;
       border-radius: 4px;
       padding: 5px;
+    
+        box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+        border: 1px solid rgb(232, 232, 232);
     }
   }
 
@@ -56,7 +61,7 @@
   &__table {
     position: absolute;
     right: 10px;
-    top: 45px;
+    top: 65px;
     font-size: .9rem;
   }
 }
@@ -68,13 +73,46 @@
 .cart {
   position: fixed;
   z-index: 10;
-  top: 90vh;
-  margin-left: 60vw;
+  top: 89vh;
+  height: 11vh;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* border: .9px solid grey; */
+  border-top-width: 1px;
+  transition: all 0.3s ease-in-out;
+  transition: 2s ease-out;
+
+  &__wrapper {
+    background-color: #ff3131;
+    margin-left: 5vw;
+    height: 8vh;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+  }
+
+  // position: fixed;
+  // z-index: 10;
+  // top: 90vh;
+
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .drawer {
 
-  background-color: #F5F4F9!important;
+  background-color: #F5F4F9 !important;
+
   &__wrapper {
     width: 90%;
     margin: 5px;
@@ -86,36 +124,38 @@
     border-radius: 10px;
   }
 
-&__content{
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  padding-top: 26px;
-  min-height: 70vh;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    min-height: 70vh;
+  }
+
+  &__scroll {
+    overflow: scroll;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    margin-left: 10px;
+  }
+
+  &__submit {
+    background-color: #3bbe00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 37px;
+    margin: 10px;
+    color: white;
+  }
 }
-&__scroll{
-  overflow: scroll;
-  height: 60vh;
-  /* display: flex; */
-  // flex-direction: column;
-  display: grid;
-  margin-left: 10px;
-}
-&__submit{
-  
-  background-color: #fe251ec7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
-  width: 100px;
-  height: 37px;
-  margin: 10px;
-  color: white;
-}
-}
+
 .menupage__section1 {
   display: flex;
   justify-content: center;
@@ -123,33 +163,92 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-.cartdesktop{
+
+.cartdesktop {
   display: none;
 }
- 
+
 @media (min-width: 768px) {
   .nav__logo {
-    width: 19%;
+    width: 265px;
+    margin: 22px 0px 0px 0px;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .menupage__section1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    width: 60vw;
+    margin-left: 11vw;
+    // flex-direction: column;
+    
+  }
+
+  .menupage__input1 {
+    width: 20vw;
+  }
+
+  .cartdesktop {
+    display: unset;
+    float: right;
+    margin-top: -55px;
+    margin-right: 79px;
+    width: 58px;
+  }
+
+  .cart__off {
+    display: none;
+  }
+
+  .cart__on {
+    position: relative;
+    float: right;
+    top: -69px;
+    right: 95px;
+    width: 29px;
+    height: 26px;
+    background: orange;
+    border-radius: 81%;
+    display: flex !important;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .nav__table{
+    position: absolute;
+    right: 91px;
+    top: 74px;
+    font-size: .9rem;
+
+  }
+  .menupage h1 {
+    margin-left: 32px;
 }
-.drawer{
-  display:none;
+
 }
-.cart{
-  display:none;
+
+.cart__off {
+  display: none;
 }
-.menupage__section1 {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  flex-direction: column;
-  width: 60vw;
-  margin-left: 23vw;
-  // flex-direction: column;
+
+.cart__on {
+  display: none;
 }
-.menupage__input1 {
-  width:20vw;
+
+.off{
+  display: none;
 }
-.cartdesktop{
-  display: unset;
-}
+.on{
+
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import PizzaData from "../../data/PizzaData.js";
 import MenuItem from "../MenuItem";
-const Pizza = ({ menuItems, setMenuItems }) => {
-    console.log(PizzaData);
+const Pizza = ({ menuItems, setMenuItems, setTotalPrice, totalPrice }) => {
+  console.log(PizzaData);
   return (
     <>
       {PizzaData.map((item) => (
@@ -13,6 +13,8 @@ const Pizza = ({ menuItems, setMenuItems }) => {
           name={item.name}
           price={item.price}
           img={item.img}
+          setTotalPrice={setTotalPrice}
+          totalPrice={totalPrice}
         />
       ))}
     </>

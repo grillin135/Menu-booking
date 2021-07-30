@@ -24,17 +24,31 @@
 
     //box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
 
+//     width: 47.5vw;
+// width: 47.5vw;
+// height: 19rem;
+// border-radius: 10px;
+// margin: 2px;
+// background: #ffffff;
+// flex-direction: column;
+// align-items: center;
+// // justify-content: center;
+// margin: 2px;
+// display: flex;
+    /* width: 47.5vw; */
     width: 47.5vw;
-width: 47.5vw;
-height: 19rem;
-border-radius: 10px;
-margin: 2px;
-background: #ffffff;
-flex-direction: column;
-align-items: center;
-// justify-content: center;
-margin: 2px;
-display: flex;
+    // height: 20.5rem;
+    border-radius: 10px;
+    margin: 2px;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(248, 248, 248);
+    box-sizing: border-box;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 0.4rem 1.6rem;
+    
 
     &__h3{
         font-size: 0.8rem;
@@ -52,7 +66,7 @@ display: flex;
         // left: 60px;
         position: relative;
         // float: right;
-        top: 21px;
+        margin: 11px;
     }
     &__img{
         border-radius: 10px;
@@ -84,7 +98,8 @@ display: flex;
         background-color: #F8F9FD;
         box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
         justify-content: space-between;
-        top: 29px;
+        // top: 29px;
+        margin: 16px 0px;
     }
     &__button3{
         background-color: #ffffff;
@@ -206,10 +221,9 @@ display: flex;
         //box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.05);
     
     width: auto;
-    height: 22rem;
     border-radius: 10px;
     margin: 2px;
-    background: #F9F9F9;
+    background: #Ffffff;
     flex-direction: column;
     align-items: center;
     // justify-content: center;
@@ -217,14 +231,19 @@ display: flex;
     display: flex;
 
     &__button2{
-        top: 17px;
+        
+    margin: 14px 0px;
     }
         &__img4{
           
                 position: relative;
-                top: 14px;
+                
             
         }
     }
+    .menuitems__h3 {
+        font-size: 1rem;
+        padding: 0px 5px;
+      }
     
   }
